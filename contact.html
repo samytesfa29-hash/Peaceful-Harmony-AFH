@@ -74,18 +74,19 @@
         <div class="contact-copy">
           <span class="eyebrow">Schedule a Tour</span>
           <h2 class="section-title">Tell us how we can help.</h2>
-          <p class="lead">This form is currently a visual website form. GitHub Pages alone does not send form submissions unless you connect a form service later.</p>
+          <p class="lead">Fill out the form below and we'll follow up about care, questions, or scheduling a tour.</p>
 
-          <form style="margin-top:30px" onsubmit="return false;">
+          <form action="https://formspree.io/f/xdenelav" method="POST" style="margin-top:30px">
+            <input type="hidden" name="_subject" value="New Peaceful Harmony Tour Request">
             <div class="form-grid">
-              <div class="field"><label for="name">Your Name</label><input id="name" type="text" placeholder="Full name"></div>
-              <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="503-555-1234"></div>
-              <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="name@example.com"></div>
-              <div class="field"><label for="relation">Looking for care for</label><select id="relation"><option>Parent</option><option>Spouse</option><option>Relative</option><option>Myself</option><option>Other</option></select></div>
-              <div class="field full"><label for="message">Anything you want us to know?</label><textarea id="message" placeholder="Tell us a little about the situation or questions you have."></textarea></div>
+              <div class="field"><label for="name">Your Name</label><input id="name" name="name" type="text" placeholder="Full name" required></div>
+              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="503-555-1234" required></div>
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="name@example.com" required></div>
+              <div class="field"><label for="relation">Looking for care for</label><select id="relation" name="looking_for_care_for"><option>Parent</option><option>Spouse</option><option>Relative</option><option>Myself</option><option>Other</option></select></div>
+              <div class="field full"><label for="message">Anything you want us to know?</label><textarea id="message" name="message" placeholder="Tell us a little about the situation or questions you have." required></textarea></div>
             </div>
-            <div class="actions"><a class="btn btn-dark" href="mailto:PeacefulHarmonyafh@gmail.com?subject=Tour%20Request">Email Tour Request</a></div>
-            <p class="form-note">Later I can connect this form to Formspree, Netlify Forms, or another form service if you want actual online submissions.</p>
+            <div class="actions"><button class="btn btn-dark" type="submit">Email Tour Request</button></div>
+            <p class="form-note">Your information will only be used to respond to your inquiry.</p>
           </form>
         </div>
 
