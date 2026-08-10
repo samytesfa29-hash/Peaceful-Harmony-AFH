@@ -10,6 +10,13 @@
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
+  // Highlight the current page in both desktop and mobile navigation.
+  const currentPage = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+  document.querySelectorAll(".desktop-nav a, .mobile-menu a").forEach(link => {
+    const target = (link.getAttribute("href") || "").split("#")[0].split("?")[0].toLowerCase();
+    if (target === currentPage) link.classList.add("active");
+  });
+
   const updateHeader = () => header?.classList.toggle("scrolled", window.scrollY > 28);
   window.addEventListener("scroll", updateHeader, { passive: true });
   updateHeader();
@@ -36,7 +43,7 @@
 
   menuButton?.addEventListener("click",()=>mobileMenu.classList.contains("open") ? closeMenu() : openMenu());
   mobileLinks.forEach(link=>link.addEventListener("click",closeMenu));
-  window.addEventListener("resize",()=>{ if(window.innerWidth>1020) closeMenu(); });
+  window.addEventListener("resize",()=>{ if(window.innerWidth>1120) closeMenu(); });
 
   const reveals = document.querySelectorAll(".reveal");
   if (!reduced && "IntersectionObserver" in window) {
