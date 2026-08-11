@@ -1,142 +1,128 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#06131a" />
-  <meta name="description" content="Peaceful Harmony Adult Foster Home in Beaverton, Oregon." />
-  <title>Contact | Peaceful Harmony Adult Foster Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#06131a" name="theme-color"/>
+<meta content="Contact Peaceful Harmony Adult Foster Home in Beaverton, Oregon to ask about room availability, care needs, or schedule an appointment-only tour." name="description"/>
+<title>Contact | Peaceful Harmony Adult Foster Home</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-
 <header class="site-header" id="siteHeader">
-  <div class="container nav">
-    <a class="brand" href="index.html" aria-label="Peaceful Harmony home">
-      <span class="brand-orb" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none">
-          <path d="M5 20c2.8-3.8 5.3-4.6 8.1-8.2 2.2-2.9 3.7-4.5 6.2-6.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-          <path d="M13.2 11.8 11 7.8M13.2 11.8l4.2-1.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-        </svg>
-      </span>
-      <span>
-        <span class="brand-name">PEACEFUL HARMONY</span>
-        <span class="brand-sub">Adult Foster Home</span>
-      </span>
-    </a>
-
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="our-home.html">Our Home</a>
-      <a href="team.html">Team</a>
-      <a href="care.html">Care</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="families.html">For Families</a>
-      <a href="careers.html">Careers</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <div>
-      <a class="nav-cta" href="contact.html">Schedule a Tour</a>
-      <button class="menu-btn" id="menuButton" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-    </div>
-  </div>
-
-  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="our-home.html">Our Home</a>
-    <a href="team.html">Meet the Team</a>
-    <a href="care.html">Care & Services</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="families.html">For Families</a>
-    <a href="careers.html">Caregiver Careers</a>
-    <a href="contact.html">Contact / Schedule a Tour</a>
-  </nav>
-</header>
-
-
-<main>
-  <section class="page-hero">
-    <div class="container page-hero-inner">
-      <span class="eyebrow reveal visible">Contact</span>
-      <h1 class="page-title reveal visible">Come see Peaceful Harmony in person.</h1>
-      <p class="lead reveal visible">Call, email, or use the tour request form below.</p>
-      <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><strong>Contact</strong></div>
-    </div>
-  </section>
-
-  <section class="section" style="background:#f7f4ee">
-    <div class="container">
-      <div class="contact-shell" style="background:#fff;border-color:var(--line);box-shadow:0 28px 80px rgba(13,33,40,.10);color:var(--ink)">
-        <div class="contact-copy">
-          <span class="eyebrow">Schedule a Tour</span>
-          <h2 class="section-title">Tell us how we can help.</h2>
-          <p class="lead">Fill out the form below and we'll follow up about care, questions, or scheduling a tour.</p>
-
-          <form action="https://formspree.io/f/xdenelav" method="POST" style="margin-top:30px">
-            <input type="hidden" name="_subject" value="New Peaceful Harmony Tour Request">
-            <div class="form-grid">
-              <div class="field"><label for="name">Your Name</label><input id="name" name="name" type="text" placeholder="Full name" required></div>
-              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="503-555-1234" required></div>
-              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="name@example.com" required></div>
-              <div class="field"><label for="relation">Looking for care for</label><select id="relation" name="looking_for_care_for"><option>Parent</option><option>Spouse</option><option>Relative</option><option>Myself</option><option>Other</option></select></div>
-              <div class="field full"><label for="message">Anything you want us to know?</label><textarea id="message" name="message" placeholder="Tell us a little about the situation or questions you have." required></textarea></div>
-            </div>
-            <div class="actions"><button class="btn btn-dark" type="submit">Email Tour Request</button></div>
-            <p class="form-note">Your information will only be used to respond to your inquiry.</p>
-          </form>
-        </div>
-
-        <div class="contact-info" style="background:#06131a">
-          <div class="contact-card"><span class="contact-label">Location</span><div class="contact-value">6428 SW 155th Ave<br>Beaverton, OR 97007</div></div>
-          <div class="contact-card"><span class="contact-label">Nursing Contact</span><div class="contact-value">Aster Birri, RN<br><a href="tel:+15403945054">540-394-5054</a></div></div>
-          <div class="contact-card"><span class="contact-label">Office</span><div class="contact-value"><a href="tel:+15034305663">503-430-5663</a><br>Fax: 971-441-7035<br><a href="mailto:PeacefulHarmonyafh@gmail.com">PeacefulHarmonyafh@gmail.com</a></div></div>
-        </div>
-      </div>
-
-      <div class="map">
-        <iframe title="Map showing Peaceful Harmony Adult Foster Home" src="https://maps.google.com/maps?q=6428%20SW%20155th%20Ave%2C%20Beaverton%2C%20OR%2097007&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-</main>
-
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <span class="footer-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none">
-          <path d="M5 20c2.8-3.8 5.3-4.6 8.1-8.2 2.2-2.9 3.7-4.5 6.2-6.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-          <path d="M13.2 11.8 11 7.8M13.2 11.8l4.2-1.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-        </svg>
-      </span>
-      <span>
-        <strong>PEACEFUL HARMONY</strong>
-        <span>Adult Foster Home</span>
-      </span>
-    </div>
-    <div class="footer-meta">
-      <p>© <span id="year"></span> Peaceful Harmony Adult Foster Home</p>
-      <p>6428 SW 155th Ave • Beaverton, OR 97007</p>
-      <p><a href="careers.html">Caregiver Careers</a></p>
-    </div>
-  </div>
-</footer>
-
-
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
-  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo viewer">
-    <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-  </button>
-  <img id="lightboxImage" src="" alt="" />
+<div class="container nav">
+<a aria-label="Peaceful Harmony home" class="brand" href="index.html">
+<span aria-hidden="true" class="brand-orb">
+<svg fill="none" viewbox="0 0 24 24">
+<path d="M5 20c2.8-3.8 5.3-4.6 8.1-8.2 2.2-2.9 3.7-4.5 6.2-6.2" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
+<path d="M13.2 11.8 11 7.8M13.2 11.8l4.2-1.7" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
+</svg>
+</span>
+<span>
+<span class="brand-name">PEACEFUL HARMONY</span>
+<span class="brand-sub">Adult Foster Home</span>
+</span>
+</a>
+<nav aria-label="Main navigation" class="desktop-nav">
+<a href="index.html">Home</a>
+<a href="our-home.html">Our Home</a>
+<a href="team.html">Team</a>
+<a href="care.html">Care</a>
+<a href="gallery.html">Gallery</a>
+<a href="families.html">For Families</a>
+<a href="careers.html">Careers</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div>
+<a class="nav-cta" href="contact.html">Schedule a Tour</a>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="menu-btn" id="menuButton" type="button">
+<svg fill="none" viewbox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+</button>
 </div>
-
+</div>
+<nav aria-label="Mobile navigation" class="mobile-menu" id="mobileMenu">
+<a href="index.html">Home</a>
+<a href="our-home.html">Our Home</a>
+<a href="team.html">Meet the Team</a>
+<a href="care.html">Care &amp; Services</a>
+<a href="gallery.html">Gallery</a>
+<a href="families.html">For Families</a>
+<a href="careers.html">Caregiver Careers</a>
+<a href="contact.html">Contact / Schedule a Tour</a>
+</nav>
+</header>
+<main>
+<section class="page-hero">
+<div class="container page-hero-inner">
+<span class="eyebrow reveal visible">Contact</span>
+<h1 class="page-title reveal visible">Come see Peaceful Harmony in person.</h1>
+<p class="lead reveal visible">Call, email, or use the tour request form below.</p>
+<div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><strong>Contact</strong></div>
+</div>
+</section>
+<section class="section brand-light">
+<div class="container">
+<div class="contact-shell light-shell">
+<div class="contact-copy">
+<span class="eyebrow">Schedule a Tour</span>
+<h2 class="section-title">Tell us how we can help.</h2>
+<p class="lead">Tell us about the person you are seeking care for, ask about current room availability, or request an appointment-only tour.</p>
+<form action="https://formspree.io/f/xdenelav" method="POST" style="margin-top:30px">
+<input name="_subject" type="hidden" value="New Peaceful Harmony Tour Request"/>
+<div class="form-grid">
+<div class="field"><label for="name">Your Name</label><input id="name" name="name" placeholder="Full name" required="" type="text"/></div>
+<div class="field"><label for="phone">Phone</label><input id="phone" name="phone" placeholder="503-555-1234" required="" type="tel"/></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" placeholder="name@example.com" required="" type="email"/></div>
+<div class="field"><label for="relation">Looking for care for</label><select id="relation" name="looking_for_care_for"><option>Parent</option><option>Spouse</option><option>Relative</option><option>Myself</option><option>Other</option></select></div>
+<div class="field full"><label for="message">Anything you want us to know?</label><textarea id="message" name="message" placeholder="Tell us a little about the situation or questions you have." required=""></textarea></div>
+</div>
+<div class="actions"><button class="btn btn-dark" type="submit">Send Tour Request</button></div>
+<p class="form-note">Your information will only be used to respond to your inquiry.</p>
+</form>
+</div>
+<div class="contact-info" style="background:#06131a">
+<div class="contact-card"><span class="contact-label">Current Availability</span><div class="contact-value">Room availability changes. Call or submit the form for current openings.</div></div><div class="contact-card"><span class="contact-label">Location</span><div class="contact-value">6428 SW 155th Ave<br/>Beaverton, OR 97007</div></div>
+<div class="contact-card"><span class="contact-label">Nursing Contact</span><div class="contact-value">Aster Birri, RN<br/><a href="tel:+15403945054">540-394-5054</a></div></div>
+<div class="contact-card"><span class="contact-label">Office</span><div class="contact-value"><a href="tel:+15034305663">503-430-5663</a><br/>Fax: 971-441-7035<br/><a href="mailto:PeacefulHarmonyafh@gmail.com">PeacefulHarmonyafh@gmail.com</a></div></div>
+</div>
+</div>
+<div class="map">
+<iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=6428%20SW%20155th%20Ave%2C%20Beaverton%2C%20OR%2097007&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="Map showing Peaceful Harmony Adult Foster Home"></iframe>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container footer-inner">
+<div class="footer-brand">
+<span aria-hidden="true" class="footer-mark">
+<svg fill="none" viewbox="0 0 24 24">
+<path d="M5 20c2.8-3.8 5.3-4.6 8.1-8.2 2.2-2.9 3.7-4.5 6.2-6.2" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
+<path d="M13.2 11.8 11 7.8M13.2 11.8l4.2-1.7" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
+</svg>
+</span>
+<span>
+<strong>PEACEFUL HARMONY</strong>
+<span>Adult Foster Home</span>
+</span>
+</div>
+<div class="footer-meta">
+<p>Level 3 • RN-Managed • Beaverton, Oregon</p><p>© <span id="year"></span> Peaceful Harmony Adult Foster Home</p>
+<p>6428 SW 155th Ave • Beaverton, OR 97007</p>
+<p><a href="careers.html">Caregiver Careers</a></p>
+</div>
+</div>
+</footer>
+<div aria-label="Photo viewer" aria-modal="true" class="lightbox" id="lightbox" role="dialog">
+<button aria-label="Close photo viewer" class="lightbox-close" id="lightboxClose" type="button">
+<svg fill="none" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+</button>
+<img alt="" id="lightboxImage" src=""/>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

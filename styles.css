@@ -363,3 +363,100 @@ h1,h2,h3,h4{margin:0;font-family:"Playfair Display",Georgia,serif;line-height:1.
   *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}.tilt{transform:none!important}
 }
+
+
+/* FINAL BRAND SYSTEM — inspired by Peaceful Harmony business-card palette */
+:root{
+  --brand-navy:#06131a;
+  --brand-teal:#0c4f59;
+  --brand-aqua:#4fb9b6;
+  --brand-aqua2:#8ed8d1;
+  --brand-ivory:#f8f4e8;
+  --brand-gold:#d6b574;
+}
+.brand-light,.brand-light-alt,.routes,.team-section,.gallery-section{
+  position:relative;overflow:hidden;
+}
+.brand-light,.routes,.team-section,.gallery-section{
+  background:
+    radial-gradient(circle at 10% 12%,rgba(79,185,182,.24),transparent 28%),
+    radial-gradient(circle at 90% 82%,rgba(214,181,116,.16),transparent 26%),
+    linear-gradient(135deg,#fbf8ef 0%,#edf7f4 48%,#dcefed 100%);
+}
+.brand-light-alt{
+  background:
+    radial-gradient(circle at 84% 16%,rgba(79,185,182,.22),transparent 28%),
+    radial-gradient(circle at 12% 88%,rgba(214,181,116,.13),transparent 26%),
+    linear-gradient(145deg,#e7f4f1 0%,#f9f5e9 54%,#eef7f5 100%);
+}
+.brand-light:before,.brand-light-alt:before,.routes:before,.team-section:before,.gallery-section:before{
+  content:"";position:absolute;right:-95px;top:-120px;width:360px;height:520px;pointer-events:none;opacity:.26;
+  background:
+    radial-gradient(ellipse at 40% 25%,transparent 58%,rgba(8,79,89,.20) 59% 60%,transparent 61%),
+    radial-gradient(ellipse at 62% 46%,transparent 58%,rgba(8,79,89,.18) 59% 60%,transparent 61%),
+    radial-gradient(ellipse at 42% 68%,transparent 58%,rgba(214,181,116,.17) 59% 60%,transparent 61%);
+  transform:rotate(22deg);
+}
+.brand-light>.container,.brand-light-alt>.container,.routes>.container,.team-section>.container,.gallery-section>.container{position:relative;z-index:1}
+.route-card,.info-card,.person{
+  border-color:rgba(14,88,94,.12);
+  background:linear-gradient(145deg,rgba(255,255,255,.93),rgba(232,247,244,.80));
+  box-shadow:0 22px 58px rgba(8,55,62,.09);
+}
+.route-card:hover,.info-card:hover,.person:hover{box-shadow:0 34px 82px rgba(8,70,76,.14)}
+.info-card .icon{
+  background:linear-gradient(145deg,#effaf7,#fff8e9);
+  color:#276f71;
+  box-shadow:10px 10px 24px rgba(13,76,81,.07),-8px -8px 20px rgba(255,255,255,.9)
+}
+.eyebrow{color:#397f78}
+.deep{color:#0b3640}
+.story-band{
+  overflow:hidden;color:#fff;
+  background:
+    radial-gradient(circle at 76% 18%,rgba(79,185,182,.22),transparent 28%),
+    radial-gradient(circle at 15% 90%,rgba(214,181,116,.14),transparent 25%),
+    linear-gradient(145deg,#06131a,#0b3a43 62%,#0e5961);
+}
+.story-band .eyebrow{color:var(--gold2)}
+.story-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:80px;align-items:start}
+.story-copy{display:grid;gap:18px;padding-top:10px;color:rgba(255,255,255,.72);font-size:1rem}
+.story-copy p{margin:0}
+.story-copy strong{color:var(--gold2)}
+.availability-card{
+  display:flex;align-items:center;justify-content:space-between;gap:36px;padding:34px 38px;border:1px solid rgba(10,93,96,.13);border-radius:28px;
+  background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(227,246,242,.82));box-shadow:0 24px 64px rgba(7,61,66,.10)
+}
+.availability-card h2{font-size:clamp(2rem,4vw,3.7rem)}
+.availability-card p{max-width:760px;margin:12px 0 0;color:var(--muted)}
+.owners-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+.owner-profile{min-height:720px}
+.owner-profile .person-portrait{height:240px}
+.owner-profile .person-body{padding:30px}
+.owner-profile p+p{margin-top:14px}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:54px}
+.fit-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;margin-top:46px;padding:34px;border:1px solid rgba(9,81,86,.13);border-radius:28px;background:rgba(255,255,255,.74);box-shadow:0 24px 64px rgba(7,61,66,.08)}
+.fit-panel h3{font-size:2rem}.fit-panel p{margin:14px 0 0;color:var(--muted)}
+.fit-list{display:grid;gap:10px}.fit-list span{padding:12px 14px;border-radius:14px;border:1px solid rgba(9,81,86,.12);background:rgba(232,247,244,.78);font-size:.86rem;font-weight:750;color:#194e53}
+.light-shell{
+  background:linear-gradient(145deg,rgba(255,255,255,.94),rgba(229,247,243,.86))!important;
+  border-color:rgba(11,83,88,.13)!important;box-shadow:0 28px 80px rgba(13,65,70,.11)!important;color:var(--ink)!important;
+}
+.light-shell .contact-copy .lead{color:var(--muted)}
+.light-shell .contact-copy .eyebrow{color:#397f78}
+.light-shell .contact-copy .section-title{color:#0d3038}
+.light-shell .field input,.light-shell .field textarea,.light-shell .field select,.light-shell .choice{background:rgba(255,255,255,.90)}
+.light-shell .application-consent{background:rgba(241,250,247,.85)}
+.faq-wrap{padding:12px 28px;border:1px solid rgba(9,81,86,.10);border-radius:24px;background:rgba(255,255,255,.64);box-shadow:0 22px 58px rgba(7,61,66,.06)}
+.gallery-item{border:1px solid rgba(255,255,255,.7)}
+@media(max-width:900px){
+  .story-grid,.fit-panel{grid-template-columns:1fr;gap:34px}
+  .owners-grid,.service-grid{grid-template-columns:1fr 1fr}
+  .availability-card{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:640px){
+  .owners-grid,.service-grid{grid-template-columns:1fr}
+  .owner-profile{min-height:0}
+  .availability-card{padding:28px 22px}
+  .faq-wrap{padding:8px 18px}
+}
