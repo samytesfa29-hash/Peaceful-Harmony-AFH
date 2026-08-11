@@ -10,6 +10,19 @@
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
+  // Add a Privacy Policy link to the footer on every page without requiring
+  // separate edits to each HTML file.
+  const footerMeta = document.querySelector(".footer-meta");
+  if (footerMeta && !footerMeta.querySelector('a[href="privacy.html"]')) {
+    const careerLink = footerMeta.querySelector('a[href="careers.html"]');
+    if (careerLink && careerLink.parentElement) {
+      careerLink.parentElement.insertAdjacentHTML("beforeend", ' • <a href="privacy.html">Privacy Policy</a>');
+    } else {
+      footerMeta.insertAdjacentHTML("beforeend", '<p><a href="privacy.html">Privacy Policy</a></p>');
+    }
+  }
+
+
   // Highlight the current page in both desktop and mobile navigation.
   const currentPage = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
   document.querySelectorAll(".desktop-nav a, .mobile-menu a").forEach(link => {
