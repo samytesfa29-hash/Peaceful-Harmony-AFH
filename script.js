@@ -1,6 +1,14 @@
 
 (() => {
   const header = document.getElementById("siteHeader");
+
+  // Keep the official Oregon licensing record accessible from every page.
+  const footerMetaForLicense = document.querySelector(".footer-meta");
+  if (footerMetaForLicense && !footerMetaForLicense.querySelector('a[href*="/Providers/Details/3509747063"]')) {
+    const linkRow = [...footerMetaForLicense.querySelectorAll("p")].find(p => p.querySelector('a[href="careers.html"]'));
+    if (linkRow) linkRow.insertAdjacentHTML("beforeend", ' • <a href="https://ltclicensing.oregon.gov/Providers/Details/3509747063" target="_blank" rel="noopener noreferrer">Verify Oregon License ↗</a>');
+  }
+
   const menuButton = document.getElementById("menuButton");
   const mobileMenu = document.getElementById("mobileMenu");
   const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll("a") : [];
