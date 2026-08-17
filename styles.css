@@ -505,43 +505,47 @@ h1,h2,h3,h4{margin:0;font-family:"Playfair Display",Georgia,serif;line-height:1.
 }
 
 
-/* =========================================================
-   PEACEFUL HARMONY CIRCULAR LOGO
-   Replaces the old yellow line icon in BOTH header and footer.
-   ========================================================= */
-
-.brand-orb,
-.footer-mark{
-  width:54px !important;
-  height:54px !important;
-  min-width:54px !important;
-  flex:0 0 54px !important;
+/* FINAL HEADER + FOOTER LOGO FIX
+   Put logo.png in the SAME GitHub folder as styles.css. */
+.brand-orb{
+  width:46px !important;
+  height:46px !important;
+  min-width:46px !important;
+  flex:0 0 46px !important;
   display:block !important;
   border-radius:50% !important;
   border:1px solid rgba(255,255,255,.18) !important;
-  background:
-    #ffffff
-    url("assets/peaceful-harmony-circle-logo.png")
-    center / cover
-    no-repeat !important;
-  box-shadow:
-    0 0 0 1px rgba(216,178,106,.18),
-    0 8px 24px rgba(0,0,0,.22) !important;
+  background:#fff url("logo.png") center/cover no-repeat !important;
+  box-shadow:0 6px 18px rgba(0,0,0,.22) !important;
   overflow:hidden !important;
-  color:transparent !important;
 }
+.brand-orb svg{display:none !important;}
 
-.brand-orb svg,
-.footer-mark svg{
-  display:none !important;
+.footer-mark{
+  width:42px !important;
+  height:42px !important;
+  min-width:42px !important;
+  flex:0 0 42px !important;
+  display:block !important;
+  border-radius:50% !important;
+  border:1px solid rgba(255,255,255,.16) !important;
+  background:#fff url("logo.png") center/cover no-repeat !important;
+  box-shadow:0 6px 18px rgba(0,0,0,.20) !important;
+  overflow:hidden !important;
 }
+.footer-mark svg{display:none !important;}
 
 @media(max-width:720px){
-  .brand-orb,
+  .brand-orb{
+    width:42px !important;
+    height:42px !important;
+    min-width:42px !important;
+    flex-basis:42px !important;
+  }
   .footer-mark{
-    width:46px !important;
-    height:46px !important;
-    min-width:46px !important;
-    flex-basis:46px !important;
+    width:38px !important;
+    height:38px !important;
+    min-width:38px !important;
+    flex-basis:38px !important;
   }
 }
