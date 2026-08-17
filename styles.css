@@ -505,21 +505,62 @@ h1,h2,h3,h4{margin:0;font-family:"Playfair Display",Georgia,serif;line-height:1.
 }
 
 
-/* Peaceful Harmony header logo */
+/* =========================================================
+   PEACEFUL HARMONY LOGO
+   Uses the same supplied logo mark in the header and footer.
+   ========================================================= */
+
+/* Header */
 .brand-orb{
-  width:58px;
-  height:58px;
-  border:0;
-  border-radius:0;
-  background:transparent url("assets/peaceful-harmony-logo-mark.png") center/contain no-repeat;
-  box-shadow:none;
+  width:58px !important;
+  height:58px !important;
+  min-width:58px !important;
+  display:block !important;
+  flex:0 0 58px !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background-image:url("assets/peaceful-harmony-logo-mark.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:contain !important;
+  box-shadow:none !important;
+  overflow:visible !important;
 }
 .brand-orb svg{
-  display:none;
+  display:none !important;
 }
+
+/* Footer */
+.footer-mark{
+  width:58px !important;
+  height:58px !important;
+  min-width:58px !important;
+  display:block !important;
+  flex:0 0 58px !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background-image:url("assets/peaceful-harmony-logo-mark.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:contain !important;
+  box-shadow:none !important;
+  overflow:visible !important;
+}
+.footer-mark svg{
+  display:none !important;
+}
+
 @media(max-width:720px){
   .brand-orb{
-    width:50px;
-    height:50px;
+    width:50px !important;
+    height:50px !important;
+    min-width:50px !important;
+    flex-basis:50px !important;
+  }
+  .footer-mark{
+    width:50px !important;
+    height:50px !important;
+    min-width:50px !important;
+    flex-basis:50px !important;
   }
 }
