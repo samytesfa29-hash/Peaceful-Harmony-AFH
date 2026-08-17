@@ -503,3 +503,23 @@ h1,h2,h3,h4{margin:0;font-family:"Playfair Display",Georgia,serif;line-height:1.
   .availability-card{padding:28px 22px}
   .faq-wrap{padding:8px 18px}
 }
+
+
+/* Peaceful Harmony header logo */
+.brand-orb{
+  width:58px;
+  height:58px;
+  border:0;
+  border-radius:0;
+  background:transparent url("assets/peaceful-harmony-logo-mark.png") center/contain no-repeat;
+  box-shadow:none;
+}
+.brand-orb svg{
+  display:none;
+}
+@media(max-width:720px){
+  .brand-orb{
+    width:50px;
+    height:50px;
+  }
+}
