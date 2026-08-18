@@ -549,3 +549,333 @@ h1,h2,h3,h4{margin:0;font-family:"Playfair Display",Georgia,serif;line-height:1.
     flex-basis:38px !important;
   }
 }
+
+
+
+/* =========================================================
+   FINAL DARK BRAND UPDATE
+   Larger header logo + larger business name + darker lower
+   page sections that continue the navy/teal hero gradient.
+   ========================================================= */
+
+/* Bigger logo and stronger business name in the top navigation */
+.brand{
+  gap:16px !important;
+}
+.brand-orb{
+  width:64px !important;
+  height:64px !important;
+  min-width:64px !important;
+  flex:0 0 64px !important;
+  border:2px solid rgba(142,216,209,.34) !important;
+  box-shadow:
+    0 0 0 4px rgba(79,185,182,.06),
+    0 10px 28px rgba(0,0,0,.28) !important;
+}
+.brand-name{
+  font-family:"Playfair Display",Georgia,serif !important;
+  font-size:1.22rem !important;
+  font-weight:700 !important;
+  letter-spacing:.035em !important;
+  line-height:1.05 !important;
+  text-transform:none !important;
+}
+.brand-sub{
+  margin-top:6px !important;
+  color:rgba(255,255,255,.68) !important;
+  font-size:.60rem !important;
+  letter-spacing:.16em !important;
+}
+
+/* Keep header spacing comfortable with the larger identity */
+.nav{
+  min-height:92px !important;
+}
+.site-header.scrolled,
+.site-header.menu-visible{
+  background:rgba(4,16,22,.90) !important;
+}
+
+/* Continue the page-hero navy/teal palette down the lower pages */
+.brand-light,
+.brand-light-alt,
+.routes,
+.team-section,
+.gallery-section{
+  color:#fff !important;
+  background:
+    radial-gradient(circle at 86% 8%,rgba(79,185,182,.20),transparent 27%),
+    radial-gradient(circle at 12% 86%,rgba(214,181,116,.09),transparent 25%),
+    linear-gradient(155deg,#0d3a44 0%,#092831 34%,#061820 72%,#041116 100%) !important;
+}
+
+.brand-light-alt{
+  background:
+    radial-gradient(circle at 12% 12%,rgba(79,185,182,.17),transparent 28%),
+    radial-gradient(circle at 90% 86%,rgba(142,216,209,.10),transparent 25%),
+    linear-gradient(145deg,#071b23 0%,#0a3039 52%,#061820 100%) !important;
+}
+
+/* Subtle botanical/brand texture on dark sections */
+.brand-light:before,
+.brand-light-alt:before,
+.routes:before,
+.team-section:before,
+.gallery-section:before{
+  opacity:.22 !important;
+  background:
+    radial-gradient(ellipse at 40% 25%,transparent 58%,rgba(142,216,209,.20) 59% 60%,transparent 61%),
+    radial-gradient(ellipse at 62% 46%,transparent 58%,rgba(79,185,182,.18) 59% 60%,transparent 61%),
+    radial-gradient(ellipse at 42% 68%,transparent 58%,rgba(214,181,116,.13) 59% 60%,transparent 61%) !important;
+}
+
+/* Headings and text on dark sections */
+.brand-light .section-title,
+.brand-light-alt .section-title,
+.routes .section-title,
+.team-section .section-title,
+.gallery-section .section-title,
+.brand-light h2,
+.brand-light-alt h2,
+.routes h2,
+.team-section h2,
+.gallery-section h2,
+.brand-light h3,
+.brand-light-alt h3,
+.routes h3,
+.team-section h3,
+.gallery-section h3,
+.brand-light .deep,
+.brand-light-alt .deep{
+  color:#f8f4e8 !important;
+}
+
+.brand-light .lead,
+.brand-light-alt .lead,
+.routes .lead,
+.team-section .lead,
+.gallery-section .lead,
+.brand-light p,
+.brand-light-alt p,
+.routes p,
+.team-section p,
+.gallery-section p{
+  color:rgba(255,255,255,.70) !important;
+}
+
+.brand-light .eyebrow,
+.brand-light-alt .eyebrow,
+.routes .eyebrow,
+.team-section .eyebrow,
+.gallery-section .eyebrow{
+  color:#8ed8d1 !important;
+}
+
+/* Dark glass cards instead of white cards */
+.route-card,
+.info-card,
+.person,
+.availability-card,
+.fit-panel,
+.faq-wrap{
+  color:#fff !important;
+  border-color:rgba(142,216,209,.15) !important;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.025)) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06),
+    0 26px 70px rgba(0,0,0,.22) !important;
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+}
+
+.route-card:hover,
+.info-card:hover,
+.person:hover{
+  border-color:rgba(142,216,209,.28) !important;
+  box-shadow:0 34px 86px rgba(0,0,0,.30) !important;
+}
+
+.route-card h3,
+.info-card h3,
+.person h3,
+.availability-card h2,
+.fit-panel h3{
+  color:#fff !important;
+}
+
+.route-card p,
+.info-card p,
+.person p,
+.availability-card p,
+.fit-panel p,
+.profile-note{
+  color:rgba(255,255,255,.66) !important;
+}
+
+.person-role{
+  color:#8ed8d1 !important;
+}
+
+.info-card .icon{
+  color:#8ed8d1 !important;
+  border:1px solid rgba(142,216,209,.16) !important;
+  background:linear-gradient(145deg,rgba(79,185,182,.18),rgba(255,255,255,.05)) !important;
+  box-shadow:none !important;
+}
+
+.route-card .go{
+  background:linear-gradient(145deg,#0d5962,#08323a) !important;
+  color:#fff !important;
+  border:1px solid rgba(142,216,209,.18);
+}
+
+.fit-list span{
+  color:#dff7f3 !important;
+  border-color:rgba(142,216,209,.14) !important;
+  background:rgba(79,185,182,.09) !important;
+}
+
+/* FAQ becomes dark and readable */
+.faq-item{
+  border-color:rgba(255,255,255,.11) !important;
+}
+.faq-q{
+  color:#fff !important;
+}
+.faq-plus{
+  color:#8ed8d1 !important;
+  border-color:rgba(142,216,209,.22) !important;
+}
+.faq-a p{
+  color:rgba(255,255,255,.66) !important;
+}
+
+/* Contact and careers forms: dark glass shell, not a big white panel */
+.light-shell{
+  color:#fff !important;
+  border-color:rgba(142,216,209,.16) !important;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.025)) !important;
+  box-shadow:0 32px 82px rgba(0,0,0,.25) !important;
+}
+
+.light-shell .contact-copy .section-title,
+.light-shell .application-title{
+  color:#fff !important;
+}
+.light-shell .contact-copy .lead,
+.light-shell .application-help,
+.light-shell .form-note{
+  color:rgba(255,255,255,.64) !important;
+}
+.light-shell .contact-copy .eyebrow,
+.light-shell .application-kicker{
+  color:#8ed8d1 !important;
+}
+
+.light-shell .field label{
+  color:rgba(255,255,255,.88) !important;
+}
+
+.light-shell .field input,
+.light-shell .field textarea,
+.light-shell .field select,
+.light-shell .choice{
+  color:#f7fbfa !important;
+  border-color:rgba(142,216,209,.18) !important;
+  background:rgba(3,22,29,.70) !important;
+}
+
+.light-shell .field input::placeholder,
+.light-shell .field textarea::placeholder{
+  color:rgba(255,255,255,.42) !important;
+}
+
+.light-shell .field select option{
+  color:#0d2128;
+  background:#fff;
+}
+
+.light-shell .choice{
+  color:rgba(255,255,255,.86) !important;
+}
+
+.light-shell .application-section{
+  border-color:rgba(255,255,255,.10) !important;
+}
+
+.light-shell .application-consent{
+  color:rgba(255,255,255,.78) !important;
+  border:1px solid rgba(142,216,209,.14) !important;
+  background:rgba(79,185,182,.07) !important;
+}
+
+/* Keep contact information visually integrated with the new dark theme */
+.contact-card{
+  border-color:rgba(142,216,209,.13) !important;
+  background:rgba(255,255,255,.045) !important;
+}
+.contact-value{
+  color:rgba(255,255,255,.82) !important;
+}
+
+/* Remove any remaining light-page impression from the body */
+body{
+  background:#041116 !important;
+}
+
+/* Footer branding slightly larger to match the stronger header */
+.footer-mark{
+  width:52px !important;
+  height:52px !important;
+  min-width:52px !important;
+  flex:0 0 52px !important;
+}
+.footer-brand strong{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:1rem !important;
+  letter-spacing:.045em !important;
+}
+
+/* Responsive adjustments for the larger logo/name */
+@media(max-width:1120px){
+  :root{--header:84px}
+  .nav{min-height:84px !important}
+  .brand-orb{
+    width:58px !important;
+    height:58px !important;
+    min-width:58px !important;
+    flex-basis:58px !important;
+  }
+  .brand-name{
+    font-size:1.08rem !important;
+  }
+}
+
+@media(max-width:720px){
+  :root{--header:78px}
+  .nav{min-height:78px !important}
+  .brand{gap:11px !important}
+  .brand-orb{
+    width:52px !important;
+    height:52px !important;
+    min-width:52px !important;
+    flex-basis:52px !important;
+  }
+  .brand-name{
+    max-width:210px !important;
+    font-size:.94rem !important;
+    letter-spacing:.025em !important;
+  }
+  .brand-sub{
+    max-width:210px !important;
+    font-size:.50rem !important;
+  }
+  .footer-mark{
+    width:46px !important;
+    height:46px !important;
+    min-width:46px !important;
+    flex-basis:46px !important;
+  }
+}
