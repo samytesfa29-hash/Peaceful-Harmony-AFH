@@ -879,3 +879,156 @@ body{
     flex-basis:46px !important;
   }
 }
+
+
+
+/* =========================================================
+   EXTRA-LARGE HEADER BRANDING + NAVIGATION
+   Final emphasis update requested by the owners.
+   ========================================================= */
+
+@media (min-width:1121px){
+  .nav{
+    min-height:112px !important;
+    gap:24px !important;
+  }
+
+  .brand{
+    gap:18px !important;
+    flex-shrink:0 !important;
+  }
+
+  .brand-orb{
+    width:88px !important;
+    height:88px !important;
+    min-width:88px !important;
+    flex:0 0 88px !important;
+    border-width:2px !important;
+    box-shadow:
+      0 0 0 5px rgba(79,185,182,.07),
+      0 14px 34px rgba(0,0,0,.30) !important;
+  }
+
+  .brand-name{
+    font-family:"Playfair Display",Georgia,serif !important;
+    font-size:1.58rem !important;
+    font-weight:700 !important;
+    line-height:1 !important;
+    letter-spacing:.035em !important;
+    white-space:nowrap !important;
+  }
+
+  .brand-sub{
+    margin-top:8px !important;
+    font-size:.68rem !important;
+    line-height:1 !important;
+    letter-spacing:.20em !important;
+    white-space:nowrap !important;
+  }
+
+  .nav-links{
+    gap:8px !important;
+    align-items:center !important;
+  }
+
+  .nav-links a{
+    font-size:1.02rem !important;
+    font-weight:700 !important;
+    padding:14px 12px !important;
+    letter-spacing:-.01em !important;
+  }
+
+  .nav-links a:after{
+    height:2px !important;
+  }
+
+  .nav-cta,
+  .nav .btn,
+  .nav a.btn{
+    min-height:52px !important;
+    padding:0 24px !important;
+    font-size:1rem !important;
+    font-weight:800 !important;
+    border-radius:999px !important;
+  }
+}
+
+/* Tablet: still noticeably larger than the old header */
+@media (min-width:721px) and (max-width:1120px){
+  .nav{
+    min-height:94px !important;
+  }
+
+  .brand-orb{
+    width:68px !important;
+    height:68px !important;
+    min-width:68px !important;
+    flex:0 0 68px !important;
+  }
+
+  .brand-name{
+    font-size:1.28rem !important;
+  }
+
+  .brand-sub{
+    font-size:.58rem !important;
+  }
+
+  .nav-links a{
+    font-size:.95rem !important;
+    font-weight:700 !important;
+    padding:12px 9px !important;
+  }
+
+  .nav-cta,
+  .nav .btn,
+  .nav a.btn{
+    min-height:48px !important;
+    padding:0 20px !important;
+    font-size:.95rem !important;
+  }
+}
+
+/* Mobile branding stays large without crowding the menu */
+@media (max-width:720px){
+  .nav{
+    min-height:86px !important;
+  }
+
+  .brand{
+    gap:12px !important;
+  }
+
+  .brand-orb{
+    width:60px !important;
+    height:60px !important;
+    min-width:60px !important;
+    flex:0 0 60px !important;
+  }
+
+  .brand-name{
+    max-width:230px !important;
+    font-size:1.06rem !important;
+    font-weight:700 !important;
+    line-height:1.02 !important;
+  }
+
+  .brand-sub{
+    max-width:230px !important;
+    margin-top:6px !important;
+    font-size:.54rem !important;
+  }
+
+  .nav-links a{
+    font-size:1.12rem !important;
+    font-weight:800 !important;
+    padding:14px 0 !important;
+  }
+
+  .nav-links .btn,
+  .nav-links a.btn,
+  .nav-cta{
+    min-height:50px !important;
+    font-size:1.02rem !important;
+  }
+}
