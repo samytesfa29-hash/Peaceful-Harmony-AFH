@@ -1128,3 +1128,147 @@ body{
     padding:14px 0 !important;
   }
 }
+
+
+
+/* =========================================================
+   FINAL INTEGRATED LARGE NAVIGATION
+   Large, easy-to-read links presented as one polished
+   segmented glass navigation control.
+   ========================================================= */
+
+@media (min-width:1121px){
+
+  /* Give the larger branding + navigation enough breathing room */
+  .nav.container{
+    max-width:1460px !important;
+    gap:24px !important;
+  }
+
+  /* Turn the eight links into one cohesive navigation "rail" */
+  .desktop-nav{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:3px !important;
+    padding:6px !important;
+    border:1px solid rgba(255,255,255,.10) !important;
+    border-radius:999px !important;
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.070),rgba(255,255,255,.025)) !important;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.07),
+      0 12px 30px rgba(0,0,0,.14) !important;
+    backdrop-filter:blur(16px) saturate(120%) !important;
+    -webkit-backdrop-filter:blur(16px) saturate(120%) !important;
+  }
+
+  /* Keep each item BIG, but make the group look intentional rather than scattered */
+  .desktop-nav a{
+    position:relative !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    min-height:48px !important;
+    padding:0 14px !important;
+    border-radius:999px !important;
+    font-size:1.08rem !important;
+    font-weight:800 !important;
+    line-height:1 !important;
+    letter-spacing:-.015em !important;
+    color:rgba(255,255,255,.84) !important;
+    white-space:nowrap !important;
+    transition:
+      color .18s ease,
+      background .18s ease,
+      box-shadow .18s ease,
+      transform .18s ease !important;
+  }
+
+  /* Remove the old underline so the new integrated styling stays clean */
+  .desktop-nav a:after{
+    display:none !important;
+  }
+
+  /* Gentle button effect without turning every link into a heavy box */
+  .desktop-nav a:hover{
+    color:#fff !important;
+    background:rgba(255,255,255,.085) !important;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.055) !important;
+    transform:translateY(-1px) !important;
+  }
+
+  /* Current page gets the premium gold + teal treatment */
+  .desktop-nav a.active,
+  .desktop-nav a[aria-current="page"]{
+    color:#fff8e7 !important;
+    background:
+      linear-gradient(135deg,rgba(214,181,116,.20),rgba(79,185,182,.12)) !important;
+    box-shadow:
+      inset 0 0 0 1px rgba(214,181,116,.28),
+      0 6px 18px rgba(0,0,0,.13) !important;
+  }
+
+  /* Make Schedule a Tour coordinate with the rail, but remain the primary CTA */
+  .nav-cta{
+    min-height:58px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    padding:0 27px !important;
+    border-radius:999px !important;
+    font-size:1.04rem !important;
+    font-weight:800 !important;
+    line-height:1 !important;
+    letter-spacing:-.01em !important;
+    color:#fff !important;
+    border:1px solid rgba(214,181,116,.34) !important;
+    background:
+      linear-gradient(135deg,rgba(214,181,116,.18),rgba(79,185,182,.13)) !important;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.09),
+      0 12px 30px rgba(0,0,0,.15) !important;
+  }
+
+  .nav-cta:hover{
+    transform:translateY(-2px) !important;
+    border-color:rgba(214,181,116,.50) !important;
+    background:
+      linear-gradient(135deg,rgba(214,181,116,.27),rgba(79,185,182,.20)) !important;
+  }
+}
+
+/* At narrower desktop widths, preserve the same design but compress it slightly */
+@media (min-width:1121px) and (max-width:1390px){
+  .nav.container{
+    max-width:1320px !important;
+    gap:15px !important;
+  }
+
+  .desktop-nav{
+    gap:1px !important;
+    padding:5px !important;
+  }
+
+  .desktop-nav a{
+    min-height:44px !important;
+    padding:0 9px !important;
+    font-size:.94rem !important;
+  }
+
+  .nav-cta{
+    min-height:52px !important;
+    padding:0 19px !important;
+    font-size:.94rem !important;
+  }
+}
+
+/* Mobile menu links stay large and clean */
+@media (max-width:1120px){
+  .mobile-menu a{
+    font-size:1.12rem !important;
+    font-weight:800 !important;
+    padding-top:14px !important;
+    padding-bottom:14px !important;
+  }
+}
