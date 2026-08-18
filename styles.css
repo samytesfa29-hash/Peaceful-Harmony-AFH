@@ -1082,3 +1082,49 @@ body{
     padding:15px 0 !important;
   }
 }
+
+
+
+/* =========================================================
+   CORRECTED DESKTOP NAV SIZE
+   Targets the ACTUAL navigation class used by the site:
+   .desktop-nav
+   ========================================================= */
+
+@media (min-width:1121px){
+  .desktop-nav{
+    gap:14px !important;
+  }
+
+  .desktop-nav a{
+    font-size:1.15rem !important;
+    font-weight:800 !important;
+    padding:16px 0 !important;
+    line-height:1 !important;
+    letter-spacing:-.015em !important;
+  }
+
+  .desktop-nav a:after{
+    bottom:8px !important;
+    height:2px !important;
+  }
+
+  .nav-cta{
+    min-height:54px !important;
+    padding:0 24px !important;
+    font-size:1rem !important;
+    font-weight:800 !important;
+  }
+}
+
+@media (min-width:901px) and (max-width:1120px){
+  .desktop-nav{
+    gap:11px !important;
+  }
+
+  .desktop-nav a{
+    font-size:1rem !important;
+    font-weight:800 !important;
+    padding:14px 0 !important;
+  }
+}
