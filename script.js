@@ -129,3 +129,19 @@
     if(e.key==="Escape"){closeMenu();closeLightbox();}
   });
 })();
+
+/* Peaceful Harmony: add Availability to the site-wide navigation */
+(function(){
+  function addLink(nav){
+    if(!nav || nav.querySelector('a[href="availability.html"]')) return;
+    const a=document.createElement('a');
+    a.href='availability.html';
+    a.textContent='Availability';
+    const current=(window.location.pathname.split('/').pop()||'index.html').toLowerCase();
+    if(current==='availability.html'){a.classList.add('active');a.setAttribute('aria-current','page');}
+    const careers=nav.querySelector('a[href="careers.html"]');
+    const contact=nav.querySelector('a[href="contact.html"]');
+    nav.insertBefore(a, careers || contact || null);
+  }
+  document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.desktop-nav,.mobile-menu').forEach(addLink);});
+})();
