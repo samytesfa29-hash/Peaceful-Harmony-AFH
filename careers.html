@@ -5,13 +5,139 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <meta content="#06131a" name="theme-color"/>
-<meta content="Apply for caregiver opportunities with Peaceful Harmony Adult Foster Home in Beaverton, Oregon. Full-time, part-time, on-call, day, evening, and need-based overnight opportunities may be available." name="description"/>
+<meta content="Peaceful Harmony Adult Foster Home is currently fully staffed and is not accepting caregiver applications at this time. Check back for future opportunities." name="description"/>
 <title>Caregiver Careers | Peaceful Harmony Adult Foster Home</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,500&amp;display=swap" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-<link href="https://peacefulharmonyafh.com/careers.html" rel="canonical"/><link href="logo.png" rel="icon" type="image/png"/><link href="logo.png" rel="apple-touch-icon"/><meta content="website" property="og:type"/><meta content="Peaceful Harmony Adult Foster Home" property="og:site_name"/><meta content="Caregiver Careers | Peaceful Harmony Adult Foster Home" property="og:title"/><meta content="Apply for caregiver opportunities with Peaceful Harmony Adult Foster Home in Beaverton, Oregon. Full-time, part-time, on-call, day, evening, and need-based overnight opportunities may be available." property="og:description"/><meta content="https://peacefulharmonyafh.com/careers.html" property="og:url"/><meta content="https://peacefulharmonyafh.com/logo.png" property="og:image"/><meta content="Peaceful Harmony Adult Foster Home logo" property="og:image:alt"/><meta content="en_US" property="og:locale"/><meta content="summary" name="twitter:card"/><meta content="Caregiver Careers | Peaceful Harmony Adult Foster Home" name="twitter:title"/><meta content="Apply for caregiver opportunities with Peaceful Harmony Adult Foster Home in Beaverton, Oregon. Full-time, part-time, on-call, day, evening, and need-based overnight opportunities may be available." name="twitter:description"/><meta content="https://peacefulharmonyafh.com/logo.png" name="twitter:image"/></head>
+<link href="https://peacefulharmonyafh.com/careers.html" rel="canonical"/><link href="logo.png" rel="icon" type="image/png"/><link href="logo.png" rel="apple-touch-icon"/><meta content="website" property="og:type"/><meta content="Peaceful Harmony Adult Foster Home" property="og:site_name"/><meta content="Caregiver Careers | Peaceful Harmony Adult Foster Home" property="og:title"/><meta content="Peaceful Harmony Adult Foster Home is currently fully staffed and is not accepting caregiver applications at this time. Check back for future opportunities." property="og:description"/><meta content="https://peacefulharmonyafh.com/careers.html" property="og:url"/><meta content="https://peacefulharmonyafh.com/logo.png" property="og:image"/><meta content="Peaceful Harmony Adult Foster Home logo" property="og:image:alt"/><meta content="en_US" property="og:locale"/><meta content="summary" name="twitter:card"/><meta content="Caregiver Careers | Peaceful Harmony Adult Foster Home" name="twitter:title"/><meta content="Peaceful Harmony Adult Foster Home is currently fully staffed and is not accepting caregiver applications at this time. Check back for future opportunities." name="twitter:description"/><meta content="https://peacefulharmonyafh.com/logo.png" name="twitter:image"/>
+<style>
+.careers-closed-section{
+  position:relative;
+  overflow:hidden;
+  padding:92px 0 110px;
+  background:
+    radial-gradient(circle at 84% 16%,rgba(79,185,182,.18),transparent 30%),
+    radial-gradient(circle at 12% 88%,rgba(214,181,116,.09),transparent 28%),
+    linear-gradient(150deg,#0b3038 0%,#071d25 48%,#041116 100%);
+}
+.careers-closed-wrap{
+  max-width:980px;
+  margin:0 auto;
+}
+.careers-status{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 16px;
+  border:1px solid rgba(142,216,209,.20);
+  border-radius:999px;
+  color:#dff7f3;
+  background:rgba(79,185,182,.09);
+  font-size:.74rem;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+.careers-status-dot{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:#8ed8d1;
+  box-shadow:0 0 0 6px rgba(142,216,209,.10);
+}
+.careers-closed-card{
+  margin-top:26px;
+  padding:clamp(32px,5vw,58px);
+  border:1px solid rgba(142,216,209,.16);
+  border-radius:30px;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.025));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06),
+    0 30px 80px rgba(0,0,0,.25);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+}
+.careers-closed-card h2{
+  margin:0;
+  max-width:820px;
+  color:#fff;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(2.5rem,5vw,4.7rem);
+  line-height:.98;
+  letter-spacing:-.035em;
+}
+.careers-closed-card h2 em{
+  color:#ead19b;
+  font-weight:600;
+}
+.careers-closed-card .lead{
+  max-width:760px;
+  margin-top:24px;
+  color:rgba(255,255,255,.70)!important;
+}
+.careers-closed-note{
+  margin-top:30px;
+  padding:22px 24px;
+  border:1px solid rgba(214,181,116,.18);
+  border-radius:18px;
+  background:rgba(214,181,116,.055);
+}
+.careers-closed-note strong{
+  display:block;
+  margin-bottom:7px;
+  color:#ead19b;
+}
+.careers-closed-note p{
+  margin:0;
+  color:rgba(255,255,255,.66);
+  line-height:1.7;
+}
+.careers-closed-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:30px;
+}
+.careers-values{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:34px;
+}
+.careers-value{
+  padding:24px;
+  border:1px solid rgba(142,216,209,.13);
+  border-radius:20px;
+  background:rgba(255,255,255,.04);
+}
+.careers-value span{
+  display:block;
+  margin-bottom:12px;
+  color:#8ed8d1;
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+.careers-value h3{
+  margin:0 0 8px;
+  color:#fff;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:1.35rem;
+}
+.careers-value p{
+  margin:0;
+  color:rgba(255,255,255,.61);
+  line-height:1.65;
+}
+@media(max-width:760px){
+  .careers-closed-section{padding:70px 0 82px}
+  .careers-values{grid-template-columns:1fr}
+}
+</style>
+
+</head>
 <body>
 <header class="site-header" id="siteHeader">
 <div class="container nav">
@@ -55,211 +181,60 @@
 <a href="contact.html">Contact / Schedule a Tour</a>
 </nav>
 </header>
+
 <main>
 <section class="page-hero">
 <div class="container page-hero-inner">
 <span class="eyebrow reveal visible">Caregiver Careers</span>
-<h1 class="page-title reveal visible">Bring compassion, dependability, and warmth to a small care home.</h1>
-<p class="lead reveal visible">We welcome caregiver applications for full-time, part-time, on-call, day, evening, and need-based overnight coverage.</p>
+<h1 class="page-title reveal visible">Our care team is currently full.</h1>
+<p class="lead reveal visible">Peaceful Harmony is fully staffed and is not accepting caregiver applications at this time.</p>
 <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><strong>Careers</strong></div>
 </div>
 </section>
-<section class="section brand-light">
-<div class="container">
-<div class="contact-shell career-shell light-shell">
-<div class="contact-copy">
-<span class="eyebrow">Caregiver Application</span>
-<h2 class="section-title">Apply to join our care team.</h2>
-<p class="lead" style="color:var(--muted)">We’re looking for dependable, compassionate people who treat residents with dignity, patience, and respect. Pay is discussed directly with applicants. Overnight shifts are used when resident needs require overnight care.</p>
-<form action="https://formspree.io/f/xdenelav" id="caregiverApplication" method="POST" style="margin-top:30px">
-<input name="_subject" type="hidden" value="New Peaceful Harmony Caregiver Job Application"/>
-<input name="application_type" type="hidden" value="Caregiver Job Application"/>
-<div class="application-section" style="border-top:0;padding-top:0">
-<span class="application-kicker">1 • About You</span>
-<h3 class="application-title">Contact information</h3>
-<p class="application-help">Give us the best information to use when following up about your application.</p>
-<div class="form-grid">
-<div class="field"><label for="app-name">Full Name *</label><input autocomplete="name" id="app-name" name="name" placeholder="Full name" required="" type="text"/></div>
-<div class="field"><label for="app-phone">Phone *</label><input autocomplete="tel" id="app-phone" name="phone" placeholder="503-555-1234" required="" type="tel"/></div>
-<div class="field"><label for="app-email">Email *</label><input autocomplete="email" id="app-email" name="email" placeholder="name@example.com" required="" type="email"/></div>
-<div class="field"><label for="app-location">City / State *</label><input autocomplete="address-level2" id="app-location" name="city_state" placeholder="Beaverton, OR" required="" type="text"/></div>
+
+<section class="careers-closed-section">
+<div class="container careers-closed-wrap">
+<div class="careers-status">
+<span class="careers-status-dot" aria-hidden="true"></span>
+NO CURRENT OPENINGS
+</div>
+
+<div class="careers-closed-card">
+<h2>We’re currently <em>fully staffed.</em></h2>
+<p class="lead">Thank you for your interest in Peaceful Harmony Adult Foster Home. Our caregiver positions are currently filled, so we have temporarily closed the caregiver application form.</p>
+
+<div class="careers-closed-note">
+<strong>Please check back for future opportunities.</strong>
+<p>Staffing needs can change over time. When a caregiver position becomes available again, this page will be updated with the current opportunity and application information.</p>
+</div>
+
+<div class="careers-values">
+<div class="careers-value">
+<span>01 • COMPASSION</span>
+<h3>Resident-centered care</h3>
+<p>Our care team is expected to treat every resident with patience, dignity, warmth, and respect.</p>
+</div>
+<div class="careers-value">
+<span>02 • DEPENDABILITY</span>
+<h3>A small team matters</h3>
+<p>In a small adult foster home, reliable communication and consistent teamwork make a meaningful difference every day.</p>
+</div>
+<div class="careers-value">
+<span>03 • PROFESSIONALISM</span>
+<h3>Quality and safety</h3>
+<p>We value thoughtful care, appropriate training, attention to resident needs, and a safe, respectful home environment.</p>
 </div>
 </div>
-<div class="application-section">
-<span class="application-kicker">2 • Availability</span>
-<h3 class="application-title">When are you available?</h3>
-<p class="application-help">Choose everything that applies. Flexible availability is welcome, but not required.</p>
-<div class="form-grid">
-<div class="field">
-<label for="employment-preference">Employment Preference *</label>
-<select id="employment-preference" name="employment_preference" required="">
-<option disabled="" selected="" value="">Select one</option>
-<option>Full-time</option>
-<option>Part-time</option>
-<option>On-call / relief</option>
-<option>Flexible / open to options</option>
-</select>
+
+<div class="careers-closed-actions">
+<a class="btn btn-gold" href="index.html">Return Home</a>
+<a class="btn btn-ghost" href="contact.html">General Contact</a>
 </div>
-<div class="field">
-<label for="start-date">Earliest Start Date</label>
-<input id="start-date" name="earliest_start_date" type="date"/>
-</div>
-<div class="field full">
-<label>Shift Availability *</label>
-<div aria-label="Shift availability" class="choice-grid three" role="group">
-<label class="choice"><input name="shift_availability" type="checkbox" value="Day shifts"/><span>Day shifts</span></label>
-<label class="choice"><input name="shift_availability" type="checkbox" value="Evening shifts"/><span>Evening shifts</span></label>
-<label class="choice"><input name="shift_availability" type="checkbox" value="Overnight shifts"/><span>Overnight shifts</span></label>
-<label class="choice"><input name="shift_availability" type="checkbox" value="Weekdays"/><span>Weekdays</span></label>
-<label class="choice"><input name="shift_availability" type="checkbox" value="Weekends"/><span>Weekends</span></label>
-<label class="choice"><input name="shift_availability" type="checkbox" value="Flexible"/><span>Flexible</span></label>
-</div>
-<span class="field-hint">Please select at least one shift before submitting.</span>
-</div>
-</div>
-</div>
-<div class="application-section">
-<span class="application-kicker">3 • Qualifications</span>
-<h3 class="application-title">Experience and readiness</h3>
-<p class="application-help">You do not need to have every certification listed below. This helps us understand your current background and what training may be needed.</p>
-<div class="form-grid">
-<div class="field">
-<label for="age18">Are you at least 18 years old? *</label>
-<select id="age18" name="age_18_or_older" required="">
-<option disabled="" selected="" value="">Select one</option>
-<option>Yes</option>
-<option>No</option>
-</select>
-</div>
-<div class="field">
-<label for="work-auth">Authorized to work in the U.S.? *</label>
-<select id="work-auth" name="authorized_to_work_in_us" required="">
-<option disabled="" selected="" value="">Select one</option>
-<option>Yes</option>
-<option>No</option>
-</select>
-</div>
-<div class="field">
-<label for="experience-years">Caregiving Experience *</label>
-<select id="experience-years" name="caregiving_experience" required="">
-<option disabled="" selected="" value="">Select one</option>
-<option>No formal experience yet</option>
-<option>Less than 1 year</option>
-<option>1–2 years</option>
-<option>3–5 years</option>
-<option>5+ years</option>
-</select>
-</div>
-<div class="field">
-<label for="transportation">Reliable transportation to scheduled shifts? *</label>
-<select id="transportation" name="reliable_transportation" required="">
-<option disabled="" selected="" value="">Select one</option>
-<option>Yes</option>
-<option>No</option>
-</select>
-</div>
-<div class="field full">
-<label>Current Certifications / Training</label>
-<div aria-label="Current certifications and training" class="choice-grid" role="group">
-<label class="choice"><input name="certifications" type="checkbox" value="CPR"/><span>CPR</span></label>
-<label class="choice"><input name="certifications" type="checkbox" value="First Aid"/><span>First Aid</span></label>
-<label class="choice"><input name="certifications" type="checkbox" value="CNA"/><span>CNA</span></label>
-<label class="choice"><input name="certifications" type="checkbox" value="Food Handler"/><span>Food Handler</span></label>
-<label class="choice"><input name="certifications" type="checkbox" value="Medication assistance or delegation experience"/><span>Medication assistance / delegation experience</span></label>
-<label class="choice"><input name="certifications" type="checkbox" value="Dementia care training"/><span>Dementia care training</span></label>
-<label class="choice"><input name="certifications" type="checkbox" value="Other"/><span>Other training</span></label>
-<label class="choice"><input name="certifications" type="checkbox" value="None yet"/><span>None yet</span></label>
-</div>
-</div>
-<div class="field full">
-<label>Care Experience</label>
-<div aria-label="Care experience" class="choice-grid" role="group">
-<label class="choice"><input name="care_experience" type="checkbox" value="Personal care and ADLs"/><span>Personal care / ADLs</span></label>
-<label class="choice"><input name="care_experience" type="checkbox" value="Mobility and transfers"/><span>Mobility / transfers</span></label>
-<label class="choice"><input name="care_experience" type="checkbox" value="Medication support"/><span>Medication support</span></label>
-<label class="choice"><input name="care_experience" type="checkbox" value="Meal preparation"/><span>Meal preparation</span></label>
-<label class="choice"><input name="care_experience" type="checkbox" value="Dementia care"/><span>Dementia care</span></label>
-<label class="choice"><input name="care_experience" type="checkbox" value="Overnight care"/><span>Overnight care</span></label>
-<label class="choice"><input name="care_experience" type="checkbox" value="Documentation and care notes"/><span>Documentation / care notes</span></label>
-<label class="choice"><input name="care_experience" type="checkbox" value="Household support"/><span>Household support</span></label>
-</div>
-</div>
-<div class="field full">
-<label for="background-training">Background Check &amp; Required Training *</label>
-<select id="background-training" name="background_check_and_training_acknowledgement" required="">
-<option disabled="" selected="" value="">Select one</option>
-<option>Yes — I am willing to complete applicable background-check and role-required training steps</option>
-<option>No</option>
-</select>
-</div>
-</div>
-</div>
-<div class="application-section">
-<span class="application-kicker">4 • About Your Fit</span>
-<h3 class="application-title">Tell us a little more.</h3>
-<p class="application-help">Short, straightforward answers are completely fine.</p>
-<div class="form-grid">
-<div class="field full">
-<label for="experience-detail">Caregiving / Work Experience *</label>
-<textarea id="experience-detail" name="experience_details" placeholder="Tell us about your caregiving experience, related work, responsibilities, or transferable experience." required=""></textarea>
-</div>
-<div class="field full">
-<label for="why-ph">Why are you interested in Peaceful Harmony? *</label>
-<textarea id="why-ph" name="why_interested" placeholder="What interests you about working as a caregiver in a small adult foster home?" required=""></textarea>
-</div>
-<div class="field full">
-<label for="resume-link">Resume Link <span style="font-weight:500;color:var(--muted)">(optional)</span></label>
-<input id="resume-link" inputmode="url" name="resume_link" placeholder="https://drive.google.com/... or another shareable link" type="url"/>
-<span class="field-hint">A resume is optional. If you do not have one online, leave this blank.</span>
-</div>
-<div class="field full">
-<label for="additional">Anything else you want us to know?</label>
-<textarea id="additional" name="additional_information" placeholder="Optional: languages, scheduling notes, additional training, or anything else relevant to the caregiver role."></textarea>
-</div>
-</div>
-</div>
-<label class="application-consent">
-<input name="application_certification" required="" type="checkbox" value="I certify the information submitted is accurate"/>
-<span>I certify that the information I submitted is accurate to the best of my knowledge. I understand that submitting this form is an application for consideration and is not an offer or guarantee of employment. Peaceful Harmony may contact me by phone or email about this application.</span>
-</label>
-<div class="application-privacy"><strong>Please do not submit sensitive identification information through this form.</strong> Do not enter a Social Security number, driver’s license number, bank information, medical information, or copies of identification. If additional documents are needed later, Peaceful Harmony can request them through an appropriate process.</div>
-<div class="actions">
-<button class="btn btn-dark application-submit" id="applicationSubmit" type="submit">Submit Caregiver Application</button>
-</div>
-<p class="form-note">Required fields are marked with *. Your information will be used to review and respond to your application. Please review our <a href="privacy.html" style="text-decoration:underline;">Privacy Policy</a>.</p>
-</form>
-</div>
-<aside class="contact-info" style="background:#06131a">
-<div class="contact-card">
-<span class="contact-label">Position</span>
-<div class="contact-value">Caregiver Opportunities<br/>Full-time • Part-time • On-call / Relief<br/>Day • Evening • Need-based Overnight</div>
-</div><div class="contact-card"><span class="contact-label">Pay</span><div class="contact-value">Compensation is discussed directly with applicants.</div></div>
-<div class="contact-card">
-<span class="contact-label">Location</span>
-<div class="contact-value">6428 SW 155th Ave<br/>Beaverton, OR 97007</div>
-</div>
-<div class="contact-card">
-<span class="contact-label">What We Value</span>
-<div class="career-points">
-<div class="career-point">Respectful, person-centered care</div>
-<div class="career-point">Dependability and good communication</div>
-<div class="career-point">Patience, attentiveness, and teamwork</div>
-<div class="career-point">A safe, clean, welcoming home environment</div>
-</div>
-</div>
-<div class="contact-card">
-<span class="contact-label">Before Starting Work</span>
-<div class="career-small">Caregiver employment is subject to applicable Oregon adult foster home qualification, background-check, training, and certification requirements. We will review next steps with selected applicants.</div>
-</div>
-<div class="contact-card">
-<span class="contact-label">Questions?</span>
-<div class="contact-value"><a href="mailto:PeacefulHarmonyafh@gmail.com">PeacefulHarmonyafh@gmail.com</a><br/><a href="tel:+15034305663">503-430-5663</a></div>
-</div>
-</aside>
 </div>
 </div>
 </section>
 </main>
+
 <footer class="footer">
 <div class="container footer-inner">
 <div class="footer-brand">
