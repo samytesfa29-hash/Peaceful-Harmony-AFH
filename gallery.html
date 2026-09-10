@@ -5,13 +5,173 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <meta content="#06131a" name="theme-color"/>
-<meta content="Professional photos of Peaceful Harmony Adult Foster Home in Beaverton, Oregon are coming soon. Schedule a visit to see the home in person." name="description"/>
+<meta content="Explore photos of Peaceful Harmony Adult Foster Home in Beaverton, Oregon, including resident spaces, shared living areas, accessibility features, and the home environment." name="description"/>
 <title>Gallery | Peaceful Harmony Adult Foster Home | Beaverton</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,500&amp;display=swap" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-<link href="https://peacefulharmonyafh.com/gallery.html" rel="canonical"/><link href="logo.png" rel="icon" type="image/png"/><link href="logo.png" rel="apple-touch-icon"/><meta content="website" property="og:type"/><meta content="Peaceful Harmony Adult Foster Home" property="og:site_name"/><meta content="Gallery | Peaceful Harmony Adult Foster Home | Beaverton" property="og:title"/><meta content="Professional photos of Peaceful Harmony Adult Foster Home in Beaverton, Oregon are coming soon. Schedule a visit to see the home in person." property="og:description"/><meta content="https://peacefulharmonyafh.com/gallery.html" property="og:url"/><meta content="https://peacefulharmonyafh.com/logo.png" property="og:image"/><meta content="Peaceful Harmony Adult Foster Home logo" property="og:image:alt"/><meta content="en_US" property="og:locale"/><meta content="summary" name="twitter:card"/><meta content="Gallery | Peaceful Harmony Adult Foster Home | Beaverton" name="twitter:title"/><meta content="Professional photos of Peaceful Harmony Adult Foster Home in Beaverton, Oregon are coming soon. Schedule a visit to see the home in person." name="twitter:description"/><meta content="https://peacefulharmonyafh.com/logo.png" name="twitter:image"/></head>
+<link href="https://peacefulharmonyafh.com/gallery.html" rel="canonical"/><link href="logo.png" rel="icon" type="image/png"/><link href="logo.png" rel="apple-touch-icon"/><meta content="website" property="og:type"/><meta content="Peaceful Harmony Adult Foster Home" property="og:site_name"/><meta content="Gallery | Peaceful Harmony Adult Foster Home | Beaverton" property="og:title"/><meta content="Explore Peaceful Harmony Adult Foster Home in Beaverton, Oregon through our photo gallery." property="og:description"/><meta content="https://peacefulharmonyafh.com/gallery.html" property="og:url"/><meta content="https://peacefulharmonyafh.com/assets/gallery/gallery-01.jpg" property="og:image"/><meta content="Peaceful Harmony Adult Foster Home gallery" property="og:image:alt"/><meta content="en_US" property="og:locale"/><meta content="summary" name="twitter:card"/><meta content="Gallery | Peaceful Harmony Adult Foster Home | Beaverton" name="twitter:title"/><meta content="Explore Peaceful Harmony Adult Foster Home in Beaverton, Oregon through our photo gallery." name="twitter:description"/><meta content="https://peacefulharmonyafh.com/assets/gallery/gallery-01.jpg" name="twitter:image"/>
+<style>
+/* ===== Peaceful Harmony photo gallery ===== */
+.real-gallery-section{
+  position:relative;
+  overflow:hidden;
+  padding:88px 0 110px;
+  background:
+    radial-gradient(circle at 88% 8%,rgba(79,185,182,.18),transparent 28%),
+    radial-gradient(circle at 8% 92%,rgba(214,181,116,.08),transparent 25%),
+    linear-gradient(155deg,#0b333c 0%,#071e27 45%,#041116 100%);
+}
+.real-gallery-intro{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(280px,.7fr);
+  gap:48px;
+  align-items:end;
+  margin-bottom:42px;
+}
+.real-gallery-intro .section-title{color:#fff!important}
+.real-gallery-intro .lead{color:rgba(255,255,255,.68)!important}
+.real-gallery-count{
+  justify-self:end;
+  padding:14px 18px;
+  border:1px solid rgba(142,216,209,.16);
+  border-radius:999px;
+  color:#dff7f3;
+  background:rgba(79,185,182,.08);
+  font-size:.76rem;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.real-gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  grid-auto-rows:135px;
+  gap:16px;
+}
+.real-gallery-grid .gallery-item{
+  position:relative;
+  grid-column:span 4;
+  grid-row:span 2;
+  width:100%;
+  height:100%;
+  min-height:0;
+  padding:0;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:24px;
+  overflow:hidden;
+  cursor:zoom-in;
+  background:#0a222a;
+  box-shadow:0 24px 58px rgba(0,0,0,.22);
+  transform:none!important;
+}
+.real-gallery-grid .gallery-item.feature{
+  grid-column:span 7;
+  grid-row:span 4;
+}
+.real-gallery-grid .gallery-item.tall{
+  grid-column:span 5;
+  grid-row:span 4;
+}
+.real-gallery-grid .gallery-item.wide{
+  grid-column:span 8;
+  grid-row:span 3;
+}
+.real-gallery-grid .gallery-item.medium{
+  grid-column:span 4;
+  grid-row:span 3;
+}
+.real-gallery-grid .gallery-item img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .45s ease, filter .45s ease;
+}
+.real-gallery-grid .gallery-item::after{
+  content:"View photo";
+  position:absolute;
+  right:16px;
+  bottom:16px;
+  padding:9px 12px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  color:#fff;
+  background:rgba(4,17,22,.68);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  font-size:.70rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:0;
+  transform:translateY(5px);
+  transition:.22s ease;
+}
+.real-gallery-grid .gallery-item:hover img{
+  transform:scale(1.035);
+  filter:brightness(1.03);
+}
+.real-gallery-grid .gallery-item:hover::after{
+  opacity:1;
+  transform:translateY(0);
+}
+.gallery-after{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  margin-top:38px;
+  padding:30px 32px;
+  border:1px solid rgba(142,216,209,.14);
+  border-radius:24px;
+  background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));
+}
+.gallery-after h3{
+  margin:0 0 7px;
+  color:#fff;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:1.7rem;
+}
+.gallery-after p{
+  margin:0;
+  max-width:680px;
+  color:rgba(255,255,255,.63);
+}
+.gallery-after .btn{flex:0 0 auto}
+@media(max-width:980px){
+  .real-gallery-intro{grid-template-columns:1fr}
+  .real-gallery-count{justify-self:start}
+  .real-gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:250px}
+  .real-gallery-grid .gallery-item,
+  .real-gallery-grid .gallery-item.feature,
+  .real-gallery-grid .gallery-item.tall,
+  .real-gallery-grid .gallery-item.wide,
+  .real-gallery-grid .gallery-item.medium{
+    grid-column:span 1;
+    grid-row:span 1;
+  }
+  .real-gallery-grid .gallery-item:first-child{grid-column:span 2}
+}
+@media(max-width:640px){
+  .real-gallery-section{padding:68px 0 84px}
+  .real-gallery-grid{grid-template-columns:1fr;grid-auto-rows:260px;gap:13px}
+  .real-gallery-grid .gallery-item,
+  .real-gallery-grid .gallery-item:first-child,
+  .real-gallery-grid .gallery-item.feature,
+  .real-gallery-grid .gallery-item.tall,
+  .real-gallery-grid .gallery-item.wide,
+  .real-gallery-grid .gallery-item.medium{
+    grid-column:1;
+    grid-row:span 1;
+  }
+  .real-gallery-grid .gallery-item:first-child{grid-row:span 2}
+  .gallery-after{align-items:flex-start;flex-direction:column;padding:25px}
+}
+</style>
+
+</head>
 <body>
 <header class="site-header" id="siteHeader">
 <div class="container nav">
@@ -55,57 +215,62 @@
 <a href="contact.html">Contact / Schedule a Tour</a>
 </nav>
 </header>
+
 <main>
 <section class="page-hero">
 <div class="container page-hero-inner">
 <span class="eyebrow reveal visible">Gallery</span>
-<h1 class="page-title reveal visible">A closer look is coming soon.</h1>
-<p class="lead reveal visible">We’re preparing updated professional photography of the home.</p>
+<h1 class="page-title reveal visible">Take a look inside.</h1>
+<p class="lead reveal visible">Explore the home, shared spaces, private-room environment, and details that help Peaceful Harmony feel welcoming and comfortable.</p>
 <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><strong>Gallery</strong></div>
 </div>
 </section>
-<section class="section gallery-section">
+
+<section class="real-gallery-section">
 <div class="container">
+<div class="real-gallery-intro">
+<div>
 <span class="eyebrow reveal">Inside Peaceful Harmony</span>
-<h2 class="section-title reveal">New photography is on the way.</h2>
-<div aria-label="Professional photos coming soon" class="gallery-coming-soon reveal" role="status">
-<div class="gallery-coming-soon-inner">
-<div aria-hidden="true" class="gallery-placeholder-icon">
-<svg fill="none" viewbox="0 0 72 72"><path d="M12 34 36 14l24 20v23a3 3 0 0 1-3 3H15a3 3 0 0 1-3-3V34Z" stroke="currentColor" stroke-width="2"></path><path d="M27 60V41h18v19" stroke="currentColor" stroke-width="2"></path><path d="M52 19c-6.4.7-11 4.8-12.3 11 6.4-.7 11-4.8 12.3-11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+<h2 class="section-title reveal">A home designed for comfort, care, and everyday living.</h2>
 </div>
-<span class="gallery-coming-soon-kicker">Gallery Update</span>
-<h3>Professional photos coming soon</h3>
-<p>We’re preparing updated images of Peaceful Harmony, including the renovated kitchen, shared living spaces, private rooms, accessible features, and outdoor areas.</p>
-<a class="btn btn-dark" href="contact.html">Schedule a Tour</a>
-</div>
-</div>
-<p class="lead reveal" style="margin-top:34px">Until the new gallery is ready, families are welcome to schedule an in-person tour to see the home.</p>
-<div style="margin-top:54px">
-<span class="eyebrow reveal">What to Expect</span>
-<h2 class="section-title reveal">What you can see during a tour.</h2>
-<p class="lead reveal">The updated photo gallery is still being prepared, but an in-person tour gives families a chance to see the spaces that matter most before making a decision.</p>
-<div class="card-grid" style="margin-top:30px">
-<div class="info-card reveal">
-<div class="icon deep"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M4 11.5 12 5l8 6.5V20H4v-8.5ZM9 20v-6h6v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-<h3 class="deep">Private Resident Rooms</h3>
-<p>See the private-room layout and talk with us about comfort, personal belongings, accessibility, and individual needs.</p>
-</div>
-<div class="info-card reveal d1">
-<div class="icon deep"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-<h3 class="deep">Shared Living Spaces</h3>
-<p>Walk through the areas used for meals, conversation, activities, visiting, and everyday home life.</p>
-</div>
-<div class="info-card reveal d2">
-<div class="icon deep"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-<h3 class="deep">Accessible Features</h3>
-<p>Review wheelchair access, ramps, grab bars, accessible bathing features, and other parts of the home that support safer daily routines.</p>
-</div>
-</div>
+<p class="lead reveal">Click or tap any photo to view it larger. Photos show the home environment and may be updated as spaces change over time.</p>
 </div>
 
+<div class="real-gallery-grid" id="realGallery">
+<button class="gallery-item feature" type="button" data-lightbox="assets/gallery/gallery-01.jpg" aria-label="Open gallery photo 1">
+<img src="assets/gallery/gallery-01.jpg" alt="Peaceful Harmony Adult Foster Home interior" loading="eager" fetchpriority="high" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button><button class="gallery-item tall" type="button" data-lightbox="assets/gallery/gallery-02.jpg" aria-label="Open gallery photo 2">
+<img src="assets/gallery/gallery-02.jpg" alt="Peaceful Harmony Adult Foster Home living space" loading="lazy" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button><button class="gallery-item medium" type="button" data-lightbox="assets/gallery/gallery-03.jpg" aria-label="Open gallery photo 3">
+<img src="assets/gallery/gallery-03.jpg" alt="Peaceful Harmony Adult Foster Home resident space" loading="lazy" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button><button class="gallery-item medium" type="button" data-lightbox="assets/gallery/gallery-04.jpg" aria-label="Open gallery photo 4">
+<img src="assets/gallery/gallery-04.jpg" alt="Peaceful Harmony Adult Foster Home shared space" loading="lazy" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button><button class="gallery-item wide" type="button" data-lightbox="assets/gallery/gallery-05.jpg" aria-label="Open gallery photo 5">
+<img src="assets/gallery/gallery-05.jpg" alt="Peaceful Harmony Adult Foster Home interior detail" loading="lazy" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button><button class="gallery-item medium" type="button" data-lightbox="assets/gallery/gallery-06.jpg" aria-label="Open gallery photo 6">
+<img src="assets/gallery/gallery-06.jpg" alt="Peaceful Harmony Adult Foster Home accessible home feature" loading="lazy" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button><button class="gallery-item medium" type="button" data-lightbox="assets/gallery/gallery-07.jpg" aria-label="Open gallery photo 7">
+<img src="assets/gallery/gallery-07.jpg" alt="Peaceful Harmony Adult Foster Home room" loading="lazy" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button><button class="gallery-item medium" type="button" data-lightbox="assets/gallery/gallery-08.jpg" aria-label="Open gallery photo 8">
+<img src="assets/gallery/gallery-08.jpg" alt="Peaceful Harmony Adult Foster Home common area" loading="lazy" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button><button class="gallery-item wide" type="button" data-lightbox="assets/gallery/gallery-09.jpg" aria-label="Open gallery photo 9">
+<img src="assets/gallery/gallery-09.jpg" alt="Peaceful Harmony Adult Foster Home home environment" loading="lazy" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button><button class="gallery-item medium" type="button" data-lightbox="assets/gallery/gallery-10.jpg" aria-label="Open gallery photo 10">
+<img src="assets/gallery/gallery-10.jpg" alt="Peaceful Harmony Adult Foster Home interior photo" loading="lazy" decoding="async" onerror="this.closest('.gallery-item').remove();"/>
+</button>
+</div>
+
+<div class="gallery-after reveal">
+<div>
+<h3>Want to see the home in person?</h3>
+<p>Photos are helpful, but an in-person visit is the best way to experience the home and ask questions about care, accessibility, routines, and availability.</p>
+</div>
+<a class="btn btn-gold" href="contact.html">Schedule a Tour</a>
+</div>
 </div>
 </section>
 </main>
+
 <footer class="footer">
 <div class="container footer-inner">
 <div class="footer-brand">
